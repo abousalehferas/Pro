@@ -41,3 +41,20 @@
 @media(max-width:1020px){.services-grid,.why-grid,.method-pillars,.exam-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:920px){.site-header{border-radius:28px}.nav-toggle{display:block}.main-nav{position:absolute;top:calc(100% + 10px);right:0;left:0;display:grid;gap:0;padding:12px;border:1px solid var(--line);border-radius:26px;background:rgba(255,255,255,.94);backdrop-filter:blur(18px);opacity:0;pointer-events:none;transform:translateY(-8px);transition:.25s var(--ease)}.main-nav.is-open{opacity:1;pointer-events:auto;transform:translateY(0)}.main-nav a{padding:14px;border-radius:16px}.nav-cta{text-align:center;margin-top:8px}.hero{grid-template-columns:1fr;padding-top:46px;gap:30px}.portrait-card{min-height:520px}.portrait-placeholder{min-height:484px}.intro-strip,.about-grid,.contact-card{grid-template-columns:1fr}.site-footer{flex-direction:column;align-items:flex-start}}
 @media(max-width:620px){.brand-copy small{display:none}.hero h1{font-size:clamp(3rem,17vw,5rem)}.hero-stats,.services-grid,.why-grid,.method-pillars,.exam-grid{grid-template-columns:1fr}.service-card-wide,.exam-wide{grid-column:auto}.floating-card{position:relative;inset:auto;margin:-50px 16px 0}.card-bottom{margin-top:14px}.portrait-card{min-height:auto}.about-copy,.qualification-card,.method-shell,.contact-card{padding:28px}.testimonial-shell{grid-template-columns:1fr}.slider-btn{justify-self:center}.testimonial-track{min-height:390px}.testimonial-card p{font-size:1.08rem}}
+
+
+/* Arabic RTL version */
+html[dir="rtl"] body{font-family:Tahoma,"Noto Kufi Arabic","Noto Sans Arabic",Arial,sans-serif;direction:rtl;text-align:right}
+html[dir="rtl"] .brand,html[dir="rtl"] .eyebrow,html[dir="rtl"] .hero-actions,html[dir="rtl"] .contact-options{direction:rtl}
+html[dir="rtl"] .main-nav{direction:rtl}
+html[dir="rtl"] .hero h1,html[dir="rtl"] .section-head h2,html[dir="rtl"] .contact-card h2{letter-spacing:-.03em;line-height:1.16}
+html[dir="rtl"] .hero-lead,html[dir="rtl"] .section-head p,html[dir="rtl"] .about-copy p,html[dir="rtl"] .service-card p,html[dir="rtl"] .why-card p,html[dir="rtl"] .pillar-card p,html[dir="rtl"] .exam-card p,html[dir="rtl"] .faq-list p,html[dir="rtl"] .contact-card p{line-height:1.9}
+html[dir="rtl"] .qualification-card li{padding-left:0;padding-right:26px}
+html[dir="rtl"] .qualification-card li:before{left:auto;right:0}
+html[dir="rtl"] .card-top{left:auto;right:-22px}
+html[dir="rtl"] .card-bottom{right:auto;left:-22px}
+html[dir="rtl"] .testimonial-card{transform:translateX(-24px)}
+html[dir="rtl"] .testimonial-card.is-active{transform:translateX(0)}
+html[dir="rtl"] .whatsapp-float{right:auto;left:20px}
+@media(max-width:920px){html[dir="rtl"] .main-nav{right:0;left:0}}
+@media(max-width:620px){html[dir="rtl"] .floating-card{inset:auto}}
