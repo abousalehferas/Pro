@@ -1,4 +1,4 @@
-const header = document.querySelector("[data-header]");
+ const header = document.querySelector("[data-header]");
 const nav = document.querySelector("[data-nav]");
 const navToggle = document.querySelector("[data-nav-toggle]");
 const year = document.querySelector("[data-year]");
@@ -59,6 +59,6 @@ if (testimonials.length) setInterval(() => showTestimonial(testimonialIndex + 1)
 document.querySelector("[data-contact-form]")?.addEventListener("submit", (event) => {
   event.preventDefault();
   const note = document.querySelector("[data-form-note]");
-  if (note) note.textContent = "Thank you. This demo form is ready to connect to your email or form service.";
+  if (note) note.textContent = document.documentElement.lang === "ar" ? "شكرًا لك. النموذج جاهز للربط مع البريد أو خدمة النماذج." : "Thank you. This demo form is ready to connect to your email or form service.";
   event.currentTarget.reset();
 });
