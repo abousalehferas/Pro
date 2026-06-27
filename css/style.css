@@ -58,3 +58,41 @@ html[dir="rtl"] .testimonial-card.is-active{transform:translateX(0)}
 html[dir="rtl"] .whatsapp-float{right:auto;left:20px}
 @media(max-width:920px){html[dir="rtl"] .main-nav{right:0;left:0}}
 @media(max-width:620px){html[dir="rtl"] .floating-card{inset:auto}}
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:14px;
+}
+
+.language-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  height:46px;
+  padding:0 18px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:#fff;
+  color:var(--navy);
+  font-weight:800;
+  white-space:nowrap;
+  transition:.25s var(--ease);
+}
+
+.language-btn:hover{
+  background:var(--navy);
+  color:#fff;
+  transform:translateY(-1px);
+}
+
+@media(max-width:920px){
+  .header-right{
+    gap:8px;
+  }
+
+  .language-btn{
+    height:42px;
+    padding:0 14px;
+    font-size:.9rem;
+  }
+}
