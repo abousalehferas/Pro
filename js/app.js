@@ -56,9 +56,3 @@ document.querySelector("[data-next]")?.addEventListener("click", () => showTesti
 document.querySelector("[data-prev]")?.addEventListener("click", () => showTestimonial(testimonialIndex - 1));
 if (testimonials.length) setInterval(() => showTestimonial(testimonialIndex + 1), 5200);
 
-document.querySelector("[data-contact-form]")?.addEventListener("submit", (event) => {
-  event.preventDefault();
-  const note = document.querySelector("[data-form-note]");
-  if (note) note.textContent = document.documentElement.lang === "ar" ? "شكرًا لك. النموذج جاهز للربط مع البريد أو خدمة النماذج." : "Thank you. This demo form is ready to connect to your email or form service.";
-  event.currentTarget.reset();
-});
