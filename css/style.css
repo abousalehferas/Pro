@@ -96,3 +96,9 @@ html[dir="rtl"] .whatsapp-float{right:auto;left:20px}
     font-size:.9rem;
   }
 }
+.footer-credit {
+  font-size: 9px;
+  opacity: 0.25;
+  text-decoration: none;
+  color: inherit;
+}
